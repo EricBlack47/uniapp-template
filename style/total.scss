@@ -1,0 +1,53 @@
+/*主题色*/
+$total-theme-color:#6579FF;
+
+/*通用主字体颜色*/
+$total-main-font-color:#111;
+
+/*通用子字体颜色*/
+$total-sub-font-color:#A3A7AD;
+
+/*通用黑色字体*/ 
+.main_text{
+	color: $total-main-font-color;
+}
+
+/*通用子字体*/
+.sub_text{
+	color: $total-sub-font-color;
+}
+
+/*通用主题字体*/
+.theme_text{
+	color: $total-theme-color;
+}
+
+/*通用加粗字体*/
+.weight_text{
+	font-weight: bold;
+}
+
+/*通用按钮*/
+.total_btn{
+	background-color: $total-theme-color;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 10rpx;
+	padding: 24rpx 0;
+}
+
+/*flex布局水平居右*/
+.flex-right{
+	margin-left: auto;
+}
+
+/*只显几行*/
+@for $i from 1 through 3 {
+	.show_#{$i}_line{
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: $i;
+		overflow: hidden;
+	}
+}
+
